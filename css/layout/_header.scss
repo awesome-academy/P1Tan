@@ -1,4 +1,11 @@
 .header {
+    &_bg{
+        img{
+            width: 100%;
+            display: block;
+        }
+
+    }
     &_top {
         background-color: #232323;
         padding: 3px 0;
@@ -162,6 +169,7 @@
             background-color: #fff;
             width: 67vw;
             left: -17vw;
+            z-index: 3;
         }
 
         &__header {

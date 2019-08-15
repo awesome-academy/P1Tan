@@ -1,0 +1,112 @@
+.product {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    &__item {
+        width: 49%;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+        margin-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    &__img {
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            //height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__interactive{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        button{
+            color: #fff;
+            background-color: #000;
+            padding: 2px 4px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: 1.7vw;
+        color: #050505;
+        font-size: 14px;
+        transition: 0.5s;
+    }
+
+    &__price {
+        margin: 1.25vw 0;
+
+        &_new {
+            font-size: 21px;
+            color: #E6AE48;
+        }
+
+        &_old {
+            margin-left: 5px;
+            font-size: 14px;
+            color: #b4b4b4;
+            text-decoration: line-through;
+        }
+    }
+}
+
+///////////////////////// 4column
+.product {
+    &__four {
+        margin: 2vw auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .product {
+        &__four {
+            margin: 2vw auto;
+    
+            .product__item {
+                width: 24.5%;
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        &__three {
+            margin: 2vw auto;
+    
+            .product__item {
+                width: 32.5%;
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        &__interactive{
+            opacity: 0;
+            transition: 0.5s;
+        }
+        &__item{
+            cursor: pointer;
+
+            &:hover{
+                .product__interactive{
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+
+                .product__title {
+                    color: #E6AE48;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}

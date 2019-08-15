@@ -1,36 +1,26 @@
 .footer_top
     .container
         .footer_top__item
-            img(src="./images/layer 511X.png", alt="img511")
+            img(src="./images/Layer 511X.png", alt="img511")
 .footer_content.container
         .footer_content__item
             p.footer_content__title THÔNG TIN
             nav
                 ul
-                    li
-                        a(href="#") VỀ CHÚNG TÔI
-                    li 
-                        a(href="#") GIAO HÀNG
-                    li
-                        a(href="#") CẢM NGHĨ
-                    li
-                        a(href="#") LƯU TRỮ
-                    li
-                        a(href="#") CHÍNH SÁCH RIÊNG TƯ
+                    -var list=["VỀ CHÚNG TÔI", "GIAO HÀNG", "CẢM NGHĨ", "LƯU TRỮ", "CHÍNH SÁCH RIÊNG TƯ"]
+                    each item in list
+                        li
+                            a(href="#")=item 
+                    
         .footer_content__item
             p.footer_content__title MUA HÀNG
             nav
                 ul
-                    li
-                        a(href="#") VẬN CHUYỂN VÀ TRA HÀNG
-                    li 
-                        a(href="#") MUA HÀNG AN TOÀN
-                    li
-                        a(href="#") VẬN CHUYỂN QUỐC TẾ
-                    li
-                        a(href="#") LIÊN KẾT
-                    li
-                        a(href="#") DỊCH VỤ GIẢM GIÁ
+                    -var list=["VẬN CHUYỂN VÀ TRA HÀNG", "MUA HÀNG AN TOÀN", "VẬN CHUYỂN QUỐC TẾ", "LIÊN KẾT" , "DỊCH VỤ GIẢM GIÁ"]
+                    each item in list
+                        li
+                            a(href="#")=item
+                     
         .footer_content__item
             p.footer_content__title GỬI MAIL
             p.footer_content__desc Gửi email cho chúng tôi để được hỗ trợ
@@ -38,10 +28,9 @@
                 input(type="email" placeholder="Enter your email")
                 button(type="button").btn.footer_content__btn Gửi
             .footer_content__icon
-                i.fab.fa-twitter
-                i.fab.fa-google-plus-g
-                i.fab.fa-linkedin-in
-                i.fas.fa-wifi
+                -var list=["fab fa-twitter", "fab fa-google-plus-g", "fab fa-linkedin-in", "fas fa-wifi"]
+                    each item in list
+                        i(class=`${item}`)
         .footer_content__item
             p.footer_content__title LIÊN HỆ
             p.footer_content__detail
