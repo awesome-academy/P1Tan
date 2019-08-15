@@ -1,0 +1,18 @@
+.breadcrumb{
+    overflow: hidden;
+    margin: 20px auto;
+
+    li{
+        float: left;
+        &:last-child{
+            a{
+                color: #E6AE48;
+            }
+        }
+    }
+
+    a{
+        font-size: 14px;
+        color: #818181;
+    }
+}

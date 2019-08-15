@@ -1,0 +1,48 @@
+mixin itemProduct(img,name, newPrice, oldPrice, focus)
+    .product__item(class=`${focus}`)
+        .product__img
+            .product__interactive
+                button(type="button").btn 
+                    i.fas.fa-heart
+                    | &nbsp; Yêu thích
+                button(type="button").btn 
+                    i.fas.fa-signal
+                    | &nbsp; So sánh
+            img(src=`${"./images/" + img + ".jpg" }` alt=`${img}`)
+        .product__text
+            h3.product__title= name
+            div.product__price
+                span.product__price_new= `${newPrice + " đ"}`
+                span.product__price_old= `${oldPrice + " đ"}`
+            button(type="button" title="ADD TO CART").btn.btn__cart ADD TO CART
+
+mixin itemBanner(year,name,img)
+    .banner__item
+        .banner__hover
+            p= year
+            p= name
+        img(src=`${"./images/" + img + ".jpg" }` alt=`${img}`)
+
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        //-meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Home
+        link(rel="stylesheet", href="./css/pages/reset.css")
+        link(rel="stylesheet", href="./css/pages/header.css")
+        link(rel="stylesheet", href="./css/pages/style.css")
+        link(rel="stylesheet", href="./css/pages/footer.css")
+        script(src="https://kit.fontawesome.com/b4b7fd911f.js")
+    body
+        header
+            include ../header/_headerTop.jade
+            // End Top Header
+            .header_bg
+                img(src="./images/Since1980.jpg", alt="bg")
+            include ../header/_headerBottom.jade
+            // End Bottom Header
+
+        footer
+            include ../footer/_footer.jade

@@ -1,0 +1,13 @@
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+
+    &__cart{
+        font-size: 12px;
+        color: #fff;
+        background: #000;
+        padding: 10px 15px;
+    }
+}
