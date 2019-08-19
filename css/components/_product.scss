@@ -4,6 +4,8 @@
     justify-content: space-between;
 
     &__item {
+        display: inline-block;
+        cursor: pointer;
         width: 49%;
         box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
         margin-top: 2vw;
@@ -26,21 +28,27 @@
         width: 100%;
 
         button{
-            color: #fff;
-            background-color: #000;
+            color: $color-white;
+            background-color: $color-black;
             padding: 2px 4px;
         }
     }
 
-    &__text {
-        text-align: center;
+    &__content {
+        &--center{
+            text-align: center;
+        }
     }
 
-    &__title {
+    &__name {
         margin-top: 1.7vw;
-        color: #050505;
-        font-size: 14px;
+        color: $color-black;
+        font-size: $size-detail;
         transition: 0.5s;
+
+        &--big{
+            font-size: 25px;
+        }
     }
 
     &__price {
@@ -48,15 +56,26 @@
 
         &_new {
             font-size: 21px;
-            color: #E6AE48;
+            color: $color-yellow;
+
+            &--big{
+                font-size: 30px;
+            }
         }
 
         &_old {
             margin-left: 5px;
-            font-size: 14px;
-            color: #b4b4b4;
+            font-size: $size-detail;
+            color: $color-time;
             text-decoration: line-through;
         }
+    }
+
+    &__desc{
+        color: $color-detail;
+        font-size: $size-detail;
+        line-height: 1.1;
+        margin-bottom: 25px;
     }
 }
 
@@ -67,6 +86,22 @@
     }
 }
 
+.product_list{
+    &__item{
+        cursor: pointer;
+        display: flex;
+        border-bottom: 1px solid $color-border;
+
+        &:last-child{
+            border-bottom: none;
+        }
+
+        .product__content{
+            padding-top: 10px;
+        }
+    }
+
+}
 
 @media screen and (min-width: 768px) {
     .product {
@@ -101,8 +136,8 @@
                     transition: 0.5s;
                 }
 
-                .product__title {
-                    color: #E6AE48;
+                .product__name {
+                    color: $color-yellow;
                     transition: 0.5s;
                 }
             }

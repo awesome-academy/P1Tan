@@ -58,13 +58,31 @@
   padding: 10px 15px;
 }
 
+.btn__list {
+  background-color: #fff;
+  color: #818181;
+  border: 1px solid #E6E6E6;
+  margin: 3px 0;
+}
+
+.btn__list:hover {
+  color: #fff;
+  background-color: #E6AE48;
+}
+
+.btn__more {
+  background-color: transparent;
+  color: #a7a7a7;
+  padding-left: 0;
+}
+
 .header_bg img {
   width: 100%;
   display: block;
 }
 
 .header_top {
-  background-color: #232323;
+  background-color: #252525;
   padding: 3px 0;
 }
 
@@ -95,7 +113,7 @@
 }
 
 .header_top a:hover {
-  color: #e6ae48;
+  color: #E6AE48;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -208,7 +226,7 @@
     transition: all 0.5s;
   }
   .header_bottom ul a:hover {
-    color: #e6ae48;
+    color: #E6AE48;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -219,7 +237,7 @@
     content: '';
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
-    border-bottom: 10px solid #e6ae48;
+    border-bottom: 10px solid #E6AE48;
     position: absolute;
     bottom: -35px;
     left: 50%;
@@ -263,7 +281,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    border: 1px solid #e6ae48;
+    border: 1px solid #E6AE48;
   }
   div.dropdown__column {
     text-align: left;

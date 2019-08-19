@@ -7,7 +7,7 @@
 
     }
     &_top {
-        background-color: #232323;
+        background-color: $color-light_black;
         padding: 3px 0;
 
         >.container {
@@ -24,14 +24,14 @@
 
         a {
             display: inline-block;
-            color: #D6D6D6;
+            color: $color-light_time;
             font-size: 12px;
             padding: 2px 6px;
             transition: all 0.5s;
             cursor: pointer;
 
             &:hover {
-                color: #e6ae48;
+                color: $color-yellow;
                 transition: all 0.5s;
             }
         }
@@ -42,7 +42,7 @@
     }
 
     &_bottom {
-        background-color: #000;
+        background-color: $color-black;
 
         nav {
             display: none;
@@ -62,7 +62,7 @@
         }
 
         &__toggle {
-            color: #fff;
+            color: $color-white;
         }
     }
 }
@@ -90,14 +90,14 @@
 
             &__input {
                 border: none;
-                border-left: 1px solid #D6D6D6;
+                border-left: 1px solid  $color-light_time;
                 background-color: transparent;
                 padding-left: 10px;
-                color: #D6D6D6;
+                color: $color-light_time;
 
                 &::placeholder {
                     font-style: italic;
-                    color: #D6D6D6;
+                    color: $color-light_time;
                     font-size: 12px;
                 }
             }
@@ -121,13 +121,13 @@
 
                 a {
                     display: inline-block;
-                    color: #fff;
+                    color: $color-white;
                     font-size: 13px;
                     padding: 2px 1.7vw;
                     transition: all 0.5s;
 
                     &:hover {
-                        color: #e6ae48;
+                        color: $color-yellow;
                         transition: all 0.5s;
                     }
                 }
@@ -142,7 +142,7 @@
             content: '';
             border-right: 10px solid transparent;
             border-left: 10px solid transparent;
-            border-bottom: 10px solid #e6ae48;
+            border-bottom: 10px solid $color-yellow;
             position: absolute;
             bottom: -35px;
             left: 50%;
@@ -166,14 +166,14 @@
             transition: 0.3s ease-in;
             display: none;
             position: absolute;
-            background-color: #fff;
+            background-color: $color-white;
             width: 67vw;
             left: -17vw;
             z-index: 3;
         }
 
         &__header {
-            background-color: #000;
+            background-color: $color-black;
             height: 35px;
         }
 
@@ -181,7 +181,7 @@
             @include flex;
             padding: 24px 24px;
             align-items: flex-start;
-            border: 1px solid #e6ae48;
+            border: 1px solid $color-yellow;
         }
 
         &__column {
@@ -201,7 +201,7 @@
                 padding: 0;
                 display: block;
                 margin-bottom: 5px;
-                color: #818181;
+                color: $color-detail;
             }
 
             img {
