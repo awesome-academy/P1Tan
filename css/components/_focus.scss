@@ -14,50 +14,50 @@
         z-index: 2;
         position: absolute;
         content: '';
-        color: #fff;
+        color: $color-white;
         text-align: center;
         transform: rotate(-45deg);
         left: -42px;
         top: 10px;
         font-size: 22px;
-        padding-bottom: 15px;
+        padding-bottom: 1.5 * $size-space;
         display: block;
         width: 150px;
     }
 
     &__sale{
         &::before {
-            border-top: 40px solid #e6ae48;
-            border-left: 40px solid #e6ae48;
+            border-top: 40px solid $color-yellow;
+            border-left: 40px solid $color-yellow;
         }
 
         &::after{
             content: 'Sale';
-            border-bottom: 2px solid #e6ae48;
+            border-bottom: 2px solid $color-yellow;
         }
     }
 
     &__new{
         &::before {
-            border-top: 40px solid #62AF26;
-            border-left: 40px solid #62AF26;
+            border-top: 40px solid $color-green;
+            border-left: 40px solid $color-green;
         }
 
         &::after{
             content: 'Mới';
-            border-bottom: 2px solid #62AF26;
+            border-bottom: 2px solid $color-green;
         }
     }
 
     &__hot{
         &::before {
-            border-top: 40px solid #ED301C;
-            border-left: 40px solid #ED301C;
+            border-top: 40px solid $color-red;
+            border-left: 40px solid $color-red;
         }
 
         &::after{
             content: 'Hot';
-            border-bottom: 2px solid #ED301C;
+            border-bottom: 2px solid $color-red;
         }
     }
 }

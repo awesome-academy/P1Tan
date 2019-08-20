@@ -7,28 +7,28 @@
 
         &__item {
             line-height: 1.2;
-            margin-bottom: 20px;
+            margin-bottom: 2 * $size-space;
 
             a {
-                font-size: 12px;
-                color: #818181;
+                font-size: $size-small_detail;
+                color: $color-detail;
             }
         }
 
         &__title {
-            color: #303030;
-            font-size: 18px;
+            color: $color-light_black;
+            font-size: $size-title;
             margin-bottom: 5px;
         }
 
         &__desc {
-            font-size: 14px;
-            color: #818181;
+            font-size: $size-detail;
+            color: $color-detail;
         }
 
         &__detail {
-            color: #494949;
-            font-size: 14px;
+            color: $color-dark_detail;
+            font-size: $size-detail;
             line-height: 1.4;
 
             >.fas {
@@ -37,36 +37,36 @@
         }
 
         &__input {
-            margin: 15px 0;
+            margin: $size-detail 0;
 
             >input {
-                padding: 5px 15px;
-                border: 1px solid #252525;
+                padding: 5px $size-detail;
+                border: 1px solid $color-light_black;
 
                 &::placeholder {
                     font-style: italic;
-                    color: #787878;
-                    font-size: 14px;
+                    color: $color-detail;
+                    font-size: $size-detail;
                 }
             }
         }
 
         &__btn {
-            background-color: #252525;
-            color: #fff;
-            padding: 5px 10px;
+            background-color: $color-light_black;
+            color:  $color-white;
+            padding: 5px $size-space;
             margin: 0;
             position: relative;
             left: -4px;
-            border: 1px solid #252525;
-            font-size: 14px;
+            border: 1px solid $color-light_black;
+            font-size: $size-detail;
             border-top-right-radius: 4px;
             border-bottom-right-radius: 5px;
 
             &::after {
                 content: '';
                 border-top: 13px solid transparent;
-                border-left: 13px solid #252525;
+                border-left: 13px solid $color-light_black;
                 border-bottom: 13px solid transparent;
                 position: absolute;
                 top: 0;
@@ -78,14 +78,14 @@
 
             >.fab,
             >.fas {
-                margin-right: 8px;
-                color: #898989;
-                font-size: 12px;
+                margin-right: $size-space;
+                color: $color-detail;
+                font-size: $size-small_detail;
                 cursor: pointer;
                 transition: all 0.3s;
 
                 &:hover {
-                    color: #f1d095;
+                    color: $color-yellow;
                     transition: all 0.3s;
                 }
             }
@@ -93,16 +93,16 @@
     }
 
     &_bottom {
-        border-top: 2px solid #e7e7e7;
-        padding: 20px 0;
+        border-top: 2px solid $color-border;
+        padding: 2 *$size-space 0;
 
         >.container {
             @include flex;
         }
 
         &__text {
-            color: #818181;
-            font-size: 12px;
+            color: $color-detail;
+            font-size: $size-small_detail;
         }
 
         &__icon {
@@ -116,7 +116,7 @@
         &_top {
             display: block;
             &__item{
-                margin: 30px;
+                margin: 3 * $size-space;
 
                 img{
                     width: 100%;

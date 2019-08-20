@@ -1,16 +1,16 @@
 mixin itemProduct(img,name, newPrice, oldPrice, focus)
-    .product__item(class=`${focus}`)
+    a(href="detailProduct.html").product__item(class=`${focus}`)
         .product__img
             .product__interactive
-                button(type="button").btn 
+                button(type="button").btn.btn__cart
                     i.fas.fa-heart
                     | &nbsp; Yêu thích
-                button(type="button").btn 
+                button(type="button").btn.btn__cart 
                     i.fas.fa-signal
                     | &nbsp; So sánh
             img(src=`${"./images/" + img + ".jpg" }` alt=`${img}`)
-        .product__text
-            h3.product__title= name
+        .product__content.product__content--center
+            h3.product__name= name
             div.product__price
                 span.product__price_new= `${newPrice + " đ"}`
                 span.product__price_old= `${oldPrice + " đ"}`
@@ -94,9 +94,9 @@ html
 
             section.container
                 .product.product__four
-                    +itemProduct("1","RƯỢU VANG ĐÀ LẠT", "370.000", "420.000", "focus focus__sale").focus.focus__sale
-                    +itemProduct("2","RƯỢU VANG ĐÀ LẠT", "360.000", "820.000", "focus focus__new").focus.focus__sale
-                    +itemProduct("3","RƯỢU VANG ĐÀ LẠT", "350.000", "550.000", "focus focus__hot").focus.focus__sale
+                    +itemProduct("1","RƯỢU VANG ĐÀ LẠT", "370.000", "420.000", "focus focus__sale")
+                    +itemProduct("2","RƯỢU VANG ĐÀ LẠT", "360.000", "820.000", "focus focus__new")
+                    +itemProduct("3","RƯỢU VANG ĐÀ LẠT", "350.000", "550.000", "focus focus__hot")
                     +itemProduct("4","RƯỢU VANG ĐÀ LẠT", "470.000", "520.000")
             
             section.banner
@@ -135,7 +135,7 @@ html
                                     |men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. 
                                     |Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, 
                                     |sản phẩm được đóng chai dung tích 750ml...
-                                button(type="button").btn Read more
+                                button(type="button").btn.btn__more Read more
                         .news__item
                             div
                                 img(src="./images/Layer 42.jpg", alt="41")
@@ -147,7 +147,7 @@ html
                                     |men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. 
                                     |Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, 
                                     |sản phẩm được đóng chai dung tích 750ml...
-                                button(type="button").btn Read more
+                                button(type="button").btn.btn__more Read more
                 .customer
                     h3.title__block
                         | KHÁCH HÀNG
@@ -158,7 +158,7 @@ html
                             |Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên
                             |men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy 
                             |trắng mịn. Vang Nổ thăng long ...
-                        button(type="button").btn Read more
+                        button(type="button").btn.btn__more Read more
                         .customer__avatar
                             img(src="./images/Layer 44.jpg", alt="44")
                         p.customer__name Giang LT

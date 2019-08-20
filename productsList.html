@@ -6,7 +6,7 @@
     <title>Products</title>
     <link rel="stylesheet" href="./css/pages/reset.css">
     <link rel="stylesheet" href="./css/pages/header.css">
-    <link rel="stylesheet" href="./css/pages/products.css">
+    <link rel="stylesheet" href="./css/pages/productsList.css">
     <link rel="stylesheet" href="./css/pages/footer.css">
     <script src="https://kit.fontawesome.com/b4b7fd911f.js"></script>
   </head>
@@ -134,7 +134,7 @@
         </section>
         <section class="content">
           <div class="sort_bar">
-            <div class="sort_bar__view"><a href="#"><i class="fas fa-th"></i></a><a href="productsList.html"><i class="fas fa-th-list"></i></a></div>
+            <div class="sort_bar__view"><a href="products.html"><i class="fas fa-th"></i></a><a href="#"><i class="fas fa-th-list"></i></a></div>
             <nav class="sort_bar__pagination">
               <ul>
                 <li><a href="#"><i class="fas fa-caret-left"></i></a></li>
@@ -147,122 +147,49 @@
               </ul>
             </nav>
           </div>
-          <div class="product product__three"><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/1.jpg" alt="1"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
+          <div class="product"><a class="product_list__item" href="detailProduct.html">
+              <div class="product__img"><img src="./images/1.jpg" alt="1"/></div>
+              <div class="product__content">
+                <p class="product__name product__name--big">RƯỢU VANG ĐÀ LẠT</p>
+                <div class="product__price"><span class="product__price_new product__price_new--big">300.000 đ</span></div>
+                <p class="product__desc">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
                 <div>
                   <button class="btn btn__cart" type="button">ADD TO CART</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
                 </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/2.jpg" alt="2"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
+              </div></a><a class="product_list__item" href="detailProduct.html">
+              <div class="product__img"><img src="./images/2.jpg" alt="2"/></div>
+              <div class="product__content">
+                <p class="product__name product__name--big">RƯỢU VANG ĐÀ LẠT</p>
+                <div class="product__price"><span class="product__price_new product__price_new--big">300.000 đ</span></div>
+                <p class="product__desc">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
                 <div>
                   <button class="btn btn__cart" type="button">ADD TO CART</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
                 </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/3.jpg" alt="3"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
+              </div></a><a class="product_list__item" href="detailProduct.html">
+              <div class="product__img"><img src="./images/3.jpg" alt="3"/></div>
+              <div class="product__content">
+                <p class="product__name product__name--big">RƯỢU VANG ĐÀ LẠT</p>
+                <div class="product__price"><span class="product__price_new product__price_new--big">300.000 đ</span></div>
+                <p class="product__desc">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
                 <div>
                   <button class="btn btn__cart" type="button">ADD TO CART</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
                 </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/4.jpg" alt="4"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
+              </div></a><a class="product_list__item" href="detailProduct.html">
+              <div class="product__img"><img src="./images/4.jpg" alt="4"/></div>
+              <div class="product__content">
+                <p class="product__name product__name--big">RƯỢU VANG ĐÀ LẠT</p>
+                <div class="product__price"><span class="product__price_new product__price_new--big">300.000 đ</span></div>
+                <p class="product__desc">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
                 <div>
                   <button class="btn btn__cart" type="button">ADD TO CART</button>
-                </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/5.jpg" alt="5"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
-                <div>
-                  <button class="btn btn__cart" type="button">ADD TO CART</button>
-                </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/6.jpg" alt="6"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
-                <div>
-                  <button class="btn btn__cart" type="button">ADD TO CART</button>
-                </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/7.jpg" alt="7"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
-                <div>
-                  <button class="btn btn__cart" type="button">ADD TO CART</button>
-                </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/8.jpg" alt="8"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
-                <div>
-                  <button class="btn btn__cart" type="button">ADD TO CART</button>
-                </div>
-              </div></a><a class="product__item" href="detailProduct.html">
-              <div class="product__img">
-                <div class="product__interactive">
-                  <button class="btn btn__cart" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
-                  <button class="btn btn__cart" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
-                </div><img src="./images/9.jpg" alt="9"/>
-              </div>
-              <div class="product__content product__content--center">
-                <p class="product__name">RƯỢU VANG ĐÀ LẠT</p>
-                <div class="product__price"><span class="product__price_new">300.000 đ</span><span class="product__price_old">420.000 đ</span></div>
-                <div>
-                  <button class="btn btn__cart" type="button">ADD TO CART</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-heart"></i>&nbsp; Yêu thích</button>
+                  <button class="btn btn__more" type="button"><i class="fas fa-signal"></i>&nbsp; So sánh</button>
                 </div>
               </div></a>
           </div>
