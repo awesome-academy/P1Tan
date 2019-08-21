@@ -1,3 +1,13 @@
+mixin blogItem(img,name,detail)
+    a(href="detailBlog.html").blog__item
+        .blog__img
+            img(src=`${"./images/" + img + ".png"}`, alt=`${img}`)
+        h4.blog__title= name
+        h6.blog__time Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+        p.blog__detail= detail
+        div.blog__btn
+            button.btn.btn__more(type='button') Read more
+            
 doctype html
 html
     head
@@ -16,5 +26,27 @@ html
             // End Top Header 
             include ../header/_headerBottom.jade
             // End Bottom Header
+        
+        main
+            .container
+                div
+                    ul.breadcrumb
+                        li
+                            a(href="home.html") Trang chủ /
+                        li
+                            a(href="blog.html") &nbsp; Blog
+                div
+                    h2.title__arrow BLOG
+                    -var detailOne = "Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml..."
+                    -var detailTwo = "Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ..."
+
+                    .blog
+                        -var listBlog = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                        each item in listBlog
+                            if item !== 2 && item !== 5 && item !== 8
+                                +blogItem("Layer78copy2", "VANG THĂNG LONG CLASSIC", detailOne)
+                            else
+                                +blogItem("Layer79copy2", "VANG THĂNG LONG CLASSIC", detailTwo)
+
         footer
             include ../footer/_footer.jade
